@@ -10,6 +10,7 @@
   --ff-julius_sans: 'Julius Sans One', sans-serif;
   --ff-fell_english: 'IM Fell English SC', serif;
   --ff-cinzel: 'Cinzel', serif;
+  --ff-marcellus: 'Marcellus SC', serif;
   --ff-aboreto: 'Aboreto', cursive;
   --ff-oswald: 'Oswald', sans-serif;
   --fw-reg: 300;
@@ -126,7 +127,7 @@ a {
   h1 {
     font-size: var(--fs-h1);
     /* font-family: var(--ff-oswald); */
-    font-family: var(--ff-cinzel);
+    font-family: var(--ff-oswald);
     font-family: var(--ff-fell_english);
     /* font-family: var(--ff-julius_sans); */
     /* font-family: 'Grenze Gotisch', cursive; */
@@ -332,7 +333,7 @@ header {
      /* border: solid blue 3px; */
      color: #ccc;
      color:rgba(0, 0, 0, 1);
-     font-family: var(--ff-julius_sans);
+     font-family: var(--ff-marcellus);
  }
 
  .intro__logo {

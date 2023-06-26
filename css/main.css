@@ -36,6 +36,13 @@
   }
 }
 
+/* utility classes */
+.contain {
+  max-width: 90em;
+  margin: auto;
+}
+
+
 /* general styles */
 html {
   scroll-behavior: smooth;

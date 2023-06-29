@@ -628,3 +628,77 @@ background-color: #eee;
 }
 
 /* end form styling  */
+
+
+
+.btn {
+  display: inline-block;
+  padding: 12px 14px;
+  background-color: #005A9A;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #005A9A;
+}
+
+
+
+
+.about-coach {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.coach-profile {
+  display: flex;
+  align-items: center;
+}
+
+.coach-profile__photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.coach-profile__name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.coach-profile__content {
+  line-height: 1.5;
+}
+
+.coach-profile__bio {
+  margin-bottom: 15px;
+}
+
+.coach-profile__bio p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .coach-profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .coach-profile__photo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .coach-profile__name {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}

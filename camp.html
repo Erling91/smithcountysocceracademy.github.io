@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smith County Soccer Academy - Camp Registration</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html#home"><img class="nav__logo" src="images/logo1.png" alt=""></a></div>
+
+    <nav>
+      <ul class="navbar__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#programs">Programs</a></li>
+        <li><a href="#campRegistration">Camp Registration</a></li>
+        <li><a href="index.html#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section class="about">
+    <h2>About Smith County Soccer Camps</h2>
+    <p>Welcome to Smith County Soccer Camps! We are dedicated to providing a quality and fun way to experience the beautiful game of soccer. Our camps are designed to help players of all ages and skill levels improve their skills and foster a love for the sport.</p>
+    <p>Our experienced coaches have a deep understanding of player development and how to create a positive and nurturing environment for all participants. We believe that soccer has the power to shape individuals both on and off the field, and we are committed to fostering personal growth and character development.</p>
+    <p>Join us at Smith County Soccer Camp and take your soccer skills to the next level!</p>
+  </section>
+
+  <h2 class="camp-details__title">Camp Details</h2>
+  <section class="camp-details">
+    
+    
+    <div class="camp-details__section">
+      <h3 class="camp-details__subtitle">Summer Soccer Camp</h3>
+      <p class="camp-details__text">Ages: 6yr - 10yr</p>
+      <p class="camp-details__text">Location: Rose City Soccer Complex</p>
+      <p class="camp-details__text">Dates: July 10th - July 14th, 2023</p>
+      <p class="camp-details__text">Time: 9:00 AM - 3:00 PM</p>
+      <p class="camp-details__text">Full Day: $200</p>
+      <p class="camp-details__text">Half Day: $100 (Ends at Noon or Starts at 1pm)</p>
+    </div>
+    
+    <div class="camp-details__section">
+      <h3 class="camp-details__subtitle">Winter Soccer Camp</h3>
+      <p class="camp-details__text">Ages: 6yr - 10yr</p>
+
+      <p class="camp-details__text">Location: Rose City Soccer Complex</p>
+
+      <p class="camp-details__text">Dates: December 20th - December 23rd, 2023</p>
+      <p class="camp-details__text">Time: 10:00 AM - 2:00 PM</p>
+    
+      <p class="camp-details__text">Full Day: $200</p>
+      <p class="camp-details__text">Half Day: $100 (Ends at Noon or Starts at 1pm)</p>
+    </div>
+    
+    <div class="camp-details__section">
+      <h3 class="camp-details__subtitle">Spring Break Soccer Camp</h3>
+      <p class="camp-details__text">Ages: 6yr - 10yr</p>
+
+      <p class="camp-details__text">Location: Rose City Soccer Complex</p>
+
+      <p class="camp-details__text">Dates: April 5th - April 9th, 2024</p>
+      <p class="camp-details__text">Time: 9:00 AM - 12:00 PM</p>
+    
+      <p class="camp-details__text">Full Day: $200</p>
+      <p class="camp-details__text">Half Day: $100 (Ends at Noon or Starts at 1pm)</p>
+    </div>
+  </section>
+  
+
+  <section class="registration-form" id="campRegistration">
+
+    
+    <form class="registration-form">
+        <h2 class="registration-form__title">Camp Registration</h2>
+      
+        <label for="name">Player Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+  
+        <label for="parent-name">Parent's Name:</label>
+        <input type="text" id="parent-name" name="parent-name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+  
+      
+        <div class="registration-form__section">
+          <label for="camp-type">Camp Type:</label>
+          <select id="camp-type" name="camp-type" required>
+            <option value="" disabled selected>Select a camp type</option>
+            <optgroup label="Summer Camps">
+              <option value="summer-full-day">Summer Full Day</option>
+              <option value="summer-half-day-morning">Summer Half Day - Morning</option>
+              <option value="summer-half-day-afternoon">Summer Half Day - Afternoon</option>
+            </optgroup>
+            <optgroup label="Winter Camps">
+              <option value="winter-full-day">Winter Full Day</option>
+              <option value="winter-half-day-morning">Winter Half Day - Morning</option>
+              <option value="winter-half-day-afternoon">Winter Half Day - Afternoon</option>
+            </optgroup>
+            <optgroup label="Spring Break Camps">
+              <option value="spring-full-day">Spring Break Full Day</option>
+              <option value="spring-half-day-morning">Spring Break Half Day - Morning</option>
+              <option value="spring-half-day-afternoon">Spring Break Half Day - Afternoon</option>
+            </optgroup>
+          </select>
+        </div>
+      
+    
+      
+        <div class="registration-form__section">
+          <label for="message">Additional Message:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+      
+        <div class="registration-form__section">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+      
+      
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Smith County Soccer Academy. All rights reserved.</p>
+  </footer>
+  
+<script src="js/index.js" type="text/javascript">
+
+</script>
+</body>
+</html>

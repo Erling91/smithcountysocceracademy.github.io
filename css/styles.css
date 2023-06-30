@@ -1,0 +1,197 @@
+/* styles.css */
+
+/* Reset default browser styles */
+body, h1, h2, form, input, select, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.85);
+
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  
+  .nav__logo {
+    height: 2em;
+    width: auto;
+}
+  
+  nav ul {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  
+.navbar__menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+  
+  .navbar__menu li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .navbar__menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+  }
+  
+  .navbar__menu li a:hover {
+    background-color: #434343;
+  }
+
+
+
+
+
+
+
+
+
+  .about {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .about {
+      padding: 10px;
+    }
+    
+    .about h2 {
+      font-size: 20px;
+    }
+    
+    .about p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+
+
+  
+  
+
+  .camp-details {
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+  }
+  
+  .camp-details__section {
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .camp-details__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .camp-details__subtitle {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .camp-details__text {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .camp-details {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  
+  
+
+  
+  section.registration-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  

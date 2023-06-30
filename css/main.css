@@ -190,8 +190,11 @@ header {
     padding: 1em 1em;
     z-index: 11;
     background-color: var(--clr-dark);
-    background-color: rgba(0, 0, 0, 0.5);
-
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
   }
   
 

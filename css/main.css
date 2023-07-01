@@ -361,7 +361,7 @@ header {
 
  /* mini intro section */
 .mini-intro {
-    height: 50vh;
+    height: auto;
 }
 
 

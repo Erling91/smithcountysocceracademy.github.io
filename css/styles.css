@@ -99,6 +99,8 @@ body, h1, h2, form, input, select, ul, li {
   
   /* Responsive styles */
   @media (max-width: 768px) {
+    
+
     .about {
       padding: 10px;
     }
@@ -194,4 +196,19 @@ body, h1, h2, form, input, select, ul, li {
     padding: 10px;
     text-align: center;
   }
+  
+
+
+  
+    /* Grid Styles */
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 1em;
+      }
+  
+      .pickup-games__content {
+        grid-column: 1 / -1;
+      }
   

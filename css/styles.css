@@ -1,5 +1,10 @@
 /* styles.css */
 
+/* utilities */
+.center {
+    text-align: center;
+}
+
 /* Reset default browser styles */
 body, h1, h2, form, input, select, ul, li {
     margin: 0;
@@ -206,9 +211,30 @@ body, h1, h2, form, input, select, ul, li {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
         padding: 1em;
+        max-width: 1000px;
+        margin: auto;
       }
   
       .pickup-games__content {
         grid-column: 1 / -1;
       }
+
+      .pickup-games__content ul {
+        list-style-type: none;
+      }
+
+      .check-in-btn {
+        padding: 10px 20px;
+        background-color: #337ab7;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .check-in-btn:hover {
+        background-color: #23527c;
+      }
+      
   

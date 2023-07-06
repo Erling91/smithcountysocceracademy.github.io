@@ -401,6 +401,12 @@ header {
   
 }
 
+.section__description {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1em;
+}
+
 
 .fitness__about {
     background-image: url(../images/track-bg.jpg);

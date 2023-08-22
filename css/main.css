@@ -581,8 +581,8 @@ p {
 
 /* footer */
 .footer {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-dark);
+    color: var(--clr-light);
     text-align: center;
     padding: 2em 0;
   }
@@ -751,5 +751,67 @@ p {
   .coach-profile__name {
     font-size: 20px;
     margin-bottom: 5px;
+  }
+}
+
+
+
+
+
+
+
+/* Sponsor Section Styles */
+
+.sponsors-section {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sponsor-carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+
+
+.sponsor-carousel a {
+  max-width: 100px;
+  height: auto;
+  padding: 1rem 0;
+  transition: transform 0.3s; /* Add transition for the hover effect */
+}
+
+.sponsor-carousel a:hover {
+  transform: scale(1.4); /* Scale up the card on hover */
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .sponsor-carousel {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust column size for smaller screens */
+      gap: 20px; /* Reduce gap for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .sponsor-carousel {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Further adjust column size for very small screens */
+      gap: 15px; /* Further reduce gap for very small screens */
   }
 }

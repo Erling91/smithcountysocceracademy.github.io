@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday Showcase Signup</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- You can link to your CSS file here -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+
+ <!-- icon links -->
+ <script src="https://kit.fontawesome.com/b776f087e3.js" crossorigin="anonymous"></script>
+ <!-- end of icon links -->
+    <!-- google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html#home"><img class="nav__logo" src="images/logo1.png" alt=""></a></div>
+    
+        <nav>
+          <ul class="navbar__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#programs">Programs</a></li>
+            <li><a href="index.html#footer">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <section class="registration-form">
+            <h2>Choose Your Age Group and Time Slot</h2>
+            <form action="process_signup.php" method="POST"> <!-- Replace with your form processing script -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="age-group">Select Age Group:</label>
+                    <select id="age-group" name="age-group" required>
+                        <option value="U5">Under 5 (4:00 PM)</option>
+                        <option value="U7">Under 7 (5:00 PM)</option>
+                        <option value="U9">Under 9 (6:00 PM)</option>
+                        <option value="U11">Under 11 (7:00 PM)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </section>
+    </main>
+    
+  
+    <footer>
+        <p>&copy; 2023 Smith County Soccer Academy. All rights reserved.</p>
+      </footer>
+    
+</body>
+</html>

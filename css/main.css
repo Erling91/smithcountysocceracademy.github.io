@@ -368,7 +368,7 @@ header {
  @media (min-width: 600px) {
 
     .hamburger {
-        display: none;
+        /* display: none; */
     }
 
     header {

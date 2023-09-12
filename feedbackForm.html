@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+  <!-- google font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel&family=Grenze+Gotisch&family=IM+Fell+English+SC&family=Julius+Sans+One&family=Marcellus+SC&family=Oswald:wght@200&display=swap" rel="stylesheet">  
+ <!-- end of google font links -->
+
+ <!-- icon links -->
+ <script src="https://kit.fontawesome.com/b776f087e3.js" crossorigin="anonymous"></script>
+ <!-- end of icon links -->
+
+</head>
+<body>
+    
+    <header>
+        <div class="logo"><a href="index.html#home"><img class="nav__logo" src="images/logo1.png" alt=""></a></div>
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">home</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">about</a></li>
+                <li class="nav__item"><a href="index.html#programs" class="nav__link">programs</a></li>
+                <li class="nav__item"><a href="index.html#waiver" class="nav__link">waiver</a></li>
+                <li class="nav__item"><a href="index.html#footer" class="nav__link">follow</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <br>
+    <div class="contain">
+    <h1 class="center">Feedback Form</h1>
+    <form action="https://formsubmit.co/smithcountysocceracademy@gmail.com" method="post">
+        <!-- Participant Information (Optional) -->
+        <label for="participantName">Participant's Name:</label>
+        <input type="text" id="participantName" name="participantName">
+        
+        <label for="ageGroup">Age Group:</label>
+        <input type="text" id="ageGroup" name="ageGroup" required>
+
+        <label for="parentName">Parent/Guardian's Name:</label>
+        <input type="text" id="parentName" name="parentName">
+        
+        <!-- Rating Scale -->
+        <p>Please rate the following aspects of the event on a scale of 1 to 5, with 1 being the lowest and 5 being the highest:</p>
+
+        <label for="overallSatisfaction">Overall Satisfaction:</label>
+        <input type="number" id="overallSatisfaction" name="overallSatisfaction" min="1" max="5" required>
+        <label for="coaching">Quality of Coaching:</label>
+        <input type="number" id="coaching" name="coaching" min="1" max="5" required>
+        <label for="fun">Did the Kids Have Fun:</label>
+        <input type="number" id="fun" name="fun" min="1" max="5" required>
+        <label for="facility">Quality of Facility/Fields:</label>
+        <input type="number" id="facility" name="facility" min="1" max="5" required>
+
+        <!-- Add more rating scale inputs for other aspects here -->
+
+        <!-- Open-Ended Questions -->
+        <label for="enjoyMost">What did you or your child enjoy most about the event?</label>
+        <textarea id="enjoyMost" name="enjoyMost" rows="4" required></textarea>
+        <label for="enjoyMost">What aspects of the event do you think could be improved?</label>
+        <textarea id="enjoyMost" name="enjoyMost" rows="4" required></textarea>
+        <label for="enjoyMost">Would you and your child be interested in future events and programs with Smith County Soccer Academy?</label>
+        <textarea id="enjoyMost" name="enjoyMost" rows="4" required></textarea>
+
+        <!-- Add more open-ended questions here -->
+
+        <!-- Contact Information (Optional) -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email">
+
+        <button class="button" type="submit">Submit Feedback</button>
+    </form>
+</div>
+<br>
+
+<footer>
+    <p>&copy; 2023 Smith County Soccer Academy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

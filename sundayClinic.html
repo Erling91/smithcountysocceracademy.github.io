@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sunday Clinic Registration</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> <!-- Include your CSS file here -->
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="index.html#home"><img class="nav__logo" src="images/logo1.png" alt=""></a></div>
+    
+        <nav>
+          <ul class="navbar__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#programs">Programs</a></li>
+            <li><a href="index.html#footer">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+<div class="contain">
+    <h1 class="center">Sunday Clinic Registration</h1>
+    <form action="https://formsubmit.co/smithcountysocceracademy@gmail.com" method="post" id="registration-form">
+        <label for="parent-name">Parent's Name:</label>
+        <input type="text" id="parent-name" name="parentName" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="player-name">Player's Name:</label>
+        <input type="text" id="player-name" name="playerName" required><br><br>
+        
+        <label for="age-group">Age Group:</label>
+        <select id="age-group" name="ageGroup" required>
+            <option value="u5">Under 5 (3pm)</option>
+            <option value="u7">Under 7 (4pm)</option>
+            <option value="u9">Under 9 (5pm)</option>
+            <option value="u11">Under 11 (6pm)</option>
+        </select><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+
+
+    
+<section class="classes" id="classes">
+    <h2 class="section__title  center">Details</h2>
+    <div class="class__container">
+        <div class="class__item">
+            <h3 class="class__title">Location</h3>
+            <p>Rose City Soccer Complex</p>
+            <p>10340 CR 490, Tyler, TX 75706</p>
+        </div>
+        <div class="class__item">
+            <h3 class="class__title">Date</h3>
+            <p>9/24 Sunday</p>
+        </div>
+        <!-- <div class="class__item">
+            <h3 class="class__title">What to bring</h3>
+            <p>Soccer cleats and hydration.</p>
+        </div> -->
+        
+    </div>
+
+</section>
+
+    <div id="roster-info">
+        <!-- You can display the roster information here -->
+    </div>
+    
+</div>
+
+<footer>
+    <p>&copy; 2023 Smith County Soccer Academy. All rights reserved.</p>
+  </footer>
+    <script>
+        // Define an object to store the roster data
+        const roster = {
+            u5: 0,
+            u7: 0,
+            u9: 0,
+            u11: 0
+        };
+
+        // Function to update the roster information
+        function updateRoster() {
+            const rosterInfo = document.getElementById("roster-info");
+            rosterInfo.innerHTML = "<h2>Roster Information</h2>";
+
+            for (const ageGroup in roster) {
+                const playerCount = roster[ageGroup];
+                rosterInfo.innerHTML += `<p>${ageGroup}: ${playerCount} registered players (12 max)</p>`;
+            }
+        }
+
+        // Function to handle form submission
+        function handleFormSubmission(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Get form data
+            const formData = new FormData(document.getElementById("registration-form"));
+            const ageGroup = formData.get("ageGroup");
+
+            // Update the roster for the selected age group
+            roster[ageGroup]++;
+            updateRoster();
+
+            // Clear the form fields
+            document.getElementById("registration-form").reset();
+
+            // You can also send form data to your server for further processing/storage here
+        }
+
+        // Attach the form submission event handler
+        document.getElementById("registration-form").addEventListener("submit", handleFormSubmission);
+
+        // Initial update of roster information
+        updateRoster();    </script>
+</body>
+</html>

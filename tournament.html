@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Registration</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tournament.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html#home"><img class="nav__logo" src="images/logo1.png" alt=""></a></div>
+    
+        <nav>
+          <ul class="navbar__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#programs">Programs</a></li>
+            <li><a href="#campRegistration">Camp Registration</a></li>
+            <li><a href="index.html#footer">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+    <section class="tournament-details center">
+        <h2>Tournament Details</h2>
+        <br>
+        <p><strong>Date:</strong> December 2, 2023</p>
+        <p><strong>Location:</strong> Rose City Soccer Complex</p>
+        <p><strong>Address:</strong> 10340 CR 490, Tyler TX, 75706</p>
+        <p><strong>Registration Fee:</strong> $240 per team</p>
+        <p><strong>Age Groups:</strong></p>
+        <br>
+        <div class="age-details">
+        <p><i>Round 1</i></p>
+            <ul>
+                <li>U11: 8:00 AM</li>
+                <li>U9: 9:00 AM</li>
+                <li>U7: 10:00 AM</li>
+            </ul>
+            <br>
+            <p><i>Round 2</i></p>
+            <ul>
+                <li>U11: 11:00 AM</li>
+                <li>U9: Noon</li>
+                <li>U7: 1:00 PM</li>
+            </ul>
+            <br>
+            <p><i>Round 3</i></p>
+            <ul>
+                <li>U11: 2:00 PM</li>
+                <li>U9: 3:00 PM</li>
+                <li>U7: 4:00 PM</li>
+            </ul>
+        </div>
+        <br>
+        <h2>Rules</h2>
+        <p>Each team must have a minimum of 4 players.</p>
+        <p>Three rounds of matches: Round one starts at 8 AM, Round two at 11 AM, and the final round at 2 PM.</p>
+        <br>
+        <h2>Champions Ceremony</h2>
+        <p>The champions ceremony and tournament celebration will be held at 5 PM. Enjoy food trucks, skill games, and challenges!</p>
+    </section>
+    
+    <section class="registration-form">
+        <h2>Team Registration</h2>
+        <form action="process_registration.php" method="post">
+            <label for="teamName">Team Name:</label>
+            <input type="text" id="teamName" name="teamName" required>
+            
+            <label for="contactName">Contact Name:</label>
+            <input type="text" id="contactName" name="contactName" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="ageGroup">Select Age Group:</label>
+            <select id="ageGroup" name="ageGroup">
+                <option value="U11">U11</option>
+                <option value="U9">U9</option>
+                <option value="U7">U7</option>
+            </select>
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>

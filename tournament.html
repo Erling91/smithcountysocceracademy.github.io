@@ -4,32 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tournament Registration</title>
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/tournament.css">
+
+ <!-- icon links -->
+ <script src="https://kit.fontawesome.com/b776f087e3.js" crossorigin="anonymous"></script>
+ <!-- end of icon links -->
+    
+  <!-- google font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel&family=Grenze+Gotisch&family=IM+Fell+English+SC&family=Julius+Sans+One&family=Marcellus+SC&family=Oswald:wght@200&display=swap" rel="stylesheet">  
+ <!-- end of google font links -->
 </head>
-<body>
+<body class="ice">
     <header>
         <div class="logo"><a href="index.html#home"><img class="nav__logo" src="images/logo1.png" alt=""></a></div>
     
         <nav>
           <ul class="navbar__menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#programs">Programs</a></li>
-            <li><a href="#campRegistration">Camp Registration</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#teamRegistration">Team Registration</a></li>
             <li><a href="index.html#footer">Contact</a></li>
           </ul>
         </nav>
       </header>
-    
-    <section class="tournament-details center">
+    <!-- <section class="ice">
+        <h2 class="title intro__title">Smith County</h2>
+        <img src="images/logo1.png" alt="" class="showcase_logo">
+        <h2 class="title intro__title">Soccer Academy </h2>
+    </section> -->
+        
+        <section class="showcase center sticky">
+        <h2 class="title winter">Winter Classic </h2>
+        
+        <img src="images/winterLogo.png" alt="" class="showcase_logo">
+        <h2 class="winter">4v4 Soccer Tournament</h2>
+        
+    </section>
+    <section id="details" class="tournament-details center ice">
         <h2>Tournament Details</h2>
         <br>
         <p><strong>Date:</strong> December 2, 2023</p>
         <p><strong>Location:</strong> Rose City Soccer Complex</p>
         <p><strong>Address:</strong> 10340 CR 490, Tyler TX, 75706</p>
         <p><strong>Registration Fee:</strong> $240 per team</p>
+        <p><strong>Free Agent:</strong>$80</p>
         <p><strong>Age Groups:</strong></p>
         <br>
         <div class="age-details">
@@ -57,15 +83,15 @@
         <br>
         <h2>Rules</h2>
         <p>Each team must have a minimum of 4 players.</p>
-        <p>Three rounds of matches: Round one starts at 8 AM, Round two at 11 AM, and the final round at 2 PM.</p>
+        <p>Three rounds of 30 minute matches: Round one starts at 8 AM, Round two at 11 AM, and the final round at 2 PM.</p>
         <br>
         <h2>Champions Ceremony</h2>
         <p>The champions ceremony and tournament celebration will be held at 5 PM. Enjoy food trucks, skill games, and challenges!</p>
     </section>
     
-    <section class="registration-form">
+    <section id="teamRegistration" class="registration-form">
         <h2>Team Registration</h2>
-        <form action="process_registration.php" method="post">
+        <form method="post" action="https://formsubmit.co/smithcountysocceracademy@gmail.com">
             <label for="teamName">Team Name:</label>
             <input type="text" id="teamName" name="teamName" required>
             
@@ -74,6 +100,9 @@
             
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" name="phone" required>
             
             <label for="ageGroup">Select Age Group:</label>
             <select id="ageGroup" name="ageGroup">
@@ -85,5 +114,20 @@
             <button type="submit">Register</button>
         </form>
     </section>
+    
+  <!-- footer -->
+  <footer class="footer center" id="footer">
+    <a href="#" class="footer__link">SmithCountySoccerAcademy@gmail.com</a>
+    <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link"  href="https://www.facebook.com/profile.php?id=100088450023325"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link"  href="https://www.instagram.com/smithcountysocceracademy/"><i class="fab fa-instagram"></i></a></li>
+      <li class="social-list__item"><a class="social-list__link"  href="#"><i class="fab fa-youtube"></i></a></li>
+      <li class="social-list__item"><a class="social-list__link"  href="#"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+    <div class="footer-bottom">
+      <p>copyright &copy;2023 Smith County Soccer Academy</p>
+    </div>
+  </footer>
+    
 </body>
 </html>

@@ -41,3 +41,44 @@ footer {
 }
 
 /* Add any additional styles you need */
+
+.showcase {
+    background-color: #003366;
+
+}
+
+.title {
+
+    font-size: var(--fs-h1);
+    /* font-family: var(--ff-oswald); */
+    font-family: var(--ff-oswald);
+    /* font-family: var(--ff-fell_english); */
+    /* font-family: var(--ff-julius_sans); */
+    /* font-family: 'Grenze Gotisch', cursive; */
+    /* letter-spacing: .3em; */
+
+    font-family: var(--ff-marcellus);
+  }
+
+  .winter {
+    
+    font-family: var(--ff-fell_english);
+    color: rgb(230, 246, 255);
+    background-color: #003366;
+
+
+  }
+
+  .sticky {
+
+  }
+
+  .ice {
+    background-color: rgb(230, 246, 255);
+    
+  }
+
+  .showcase_logo {
+    margin: auto;
+    width: 25vh;
+  }

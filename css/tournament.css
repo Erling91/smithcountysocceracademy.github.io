@@ -82,3 +82,42 @@ footer {
     margin: auto;
     width: 25vh;
   }
+
+
+  
+/* sponsors section */
+
+.sponsors-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.sponsor-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.sponsor-carousel img {
+    max-width: 150px;
+    max-height: 100px;
+    object-fit: contain;
+    margin: 0 1rem;
+}
+
+.sponsor-carousel img:hover {
+    transition: 300ms;
+    scale: 1.2;
+}
+
+.showcase {
+    margin: 0;
+}
+
+.fancy {
+    font-family: 'Cinzel', serif;
+}
+/* end of sponsors section */

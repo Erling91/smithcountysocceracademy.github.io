@@ -1,0 +1,72 @@
+/* Add this CSS to your website's stylesheet */
+
+:root {
+    --ff-primary: 'Roboto Condensed', sans-serif;
+    --ff-secondary: 'Luxurious Roman', monospace;
+    --ff-julius_sans: 'Julius Sans One', sans-serif;
+    --ff-fell_english: 'IM Fell English SC', serif;
+    --ff-cinzel: 'Cinzel', serif;
+    --ff-marcellus: 'Marcellus SC', serif;
+    --ff-aboreto: 'Aboreto', cursive;
+    --ff-oswald: 'Oswald', sans-serif;
+    --ff-arizonia: 'Arizonia', sans-serif;
+    --fw-reg: 300;
+    --fw-bold: 900;
+    --clr-light: #eee;
+    --clr-light-alt: #eee;
+  
+    --clr-dark: #303030;
+    --clr-accent: #005A9C;
+    --fs-h1: 2.5rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1.25rem;
+    --bs: .25em .25em .75em rgba(0, 0, 0, 0.5), .15em .15em .25em rgba(0, 0, 0, .5);
+  }
+
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    font-family: var(--ff-arizonia);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Additional styling for the form elements can be added here */
+

@@ -70,3 +70,7 @@ button:hover {
 
 /* Additional styling for the form elements can be added here */
 
+.showcase {
+    width: 900vh;
+    margin: auto;
+}

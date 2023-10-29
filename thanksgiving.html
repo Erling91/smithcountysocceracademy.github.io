@@ -38,17 +38,24 @@
         <nav>
           <ul class="navbar__menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#footer">Contact</a></li>
+            <li><a href="#registration">Register</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#footer">Contact</a></li>
           </ul>
         </nav>
       </header>
 
     <h1>Thanksgiving Camps & Clinics Registration</h1>
+    
     <br>
-    <form action="https://formsubmit.co/smithcountysocceracademy@gmail.com" method="post">
+    <form id="registration" action="https://formsubmit.co/smithcountysocceracademy@gmail.com" method="post">
         <label for="player_name">Player's Name:</label>
         <input type="text" id="player_name" name="player_name" required>
 
+        <label for="age">Player's Age:</label>
+<input type="text" id="age" name="age" placeholder="" required>
+
+        
         <label for="parent_name">Parent's Name:</label>
         <input type="text" id="parent_name" name="parent_name" required>
 
@@ -67,14 +74,11 @@
             <option value="1-hour Clinic">1-hour Clinic</option>
         </select>
 
-        <label for="age">Age:</label>
-<input type="text" id="age" name="age" placeholder="Player age" required>
-
-        
 
         <button type="submit">Register</button>
     </form>
-
+<br>
+    <img id="details" class="showcase" src="images/thanksgiving.png" alt="">
     <!-- Add your JavaScript for form validation here -->
     <br>
    

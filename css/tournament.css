@@ -121,3 +121,17 @@ footer {
     font-family: 'Cinzel', serif;
 }
 /* end of sponsors section */
+
+@media (max-width: 768px) {
+
+    .sponsor-carousel {
+        display: block;
+
+    }
+
+    .sponsor-carousel a img {
+        
+        margin: auto; /* Decrease the spacing */
+        padding: 1em;
+    }
+}

@@ -74,3 +74,10 @@ button:hover {
     width: 900vh;
     margin: auto;
 }
+
+.date-label {
+    display: inline-flex;
+    align-items: center;
+    /* justify-content: space-around; */
+  }
+

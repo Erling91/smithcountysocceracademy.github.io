@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Academy Program - Smith County Soccer Academy</title>
+    <meta name="description" content="Discover The Academy program at Smith County Soccer Academy. Enhance your soccer skills with our expert coaching.">
+    <meta name="keywords" content="soccer, football, academy, training, coaching">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arizonia&family=Cinzel&family=Grenze+Gotisch&family=IM+Fell+English+SC&family=Julius+Sans+One&family=Marcellus+SC&family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header class="sticky">
+        <a class="nav__logo" href="index.html"><img src="logos/SCSA_logo.png" alt="SCSA Logo" class="nav__logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#programs">Programs</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="#SCSC">Club Team</a></li>
+                <li><a href="#shop">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!-- Youth Academy Registration Section -->
+<section id="registration" class="registration-section">
+    <div class="container">
+        <h2 class="section-heading">Youth Academy Registration</h2>
+
+        <!-- Registration Form -->
+        <form action="https://formsubmit.co/smithcountysocceracademy@gmail.com" method="post" class="registration-form">
+            <!-- Personal Information -->
+            
+            <div class="form-group">
+                <label for="player_name">Player Name:</label>
+                <input type="text" id="player_name" name="player_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="parent_name">Parent/Guardian Name:</label>
+                <input type="text" id="parent_name" name="parent_name" required>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+
+            
+    <p>Select player age group:</p>
+
+    <input type="radio" id="u5" name="age_group" value="u5">
+    <label for="u5">u5 (4pm)</label><br>
+    <input type="radio" id="u7" name="age_group" value="u7">
+    <label for="u7">u7 (5pm)</label><br>
+    <input type="radio" id="u9" name="age_group" value="u9">
+    <label for="u9">u9 (6pm)</label><br>
+    <input type="radio" id="u11" name="age_group" value="u11">
+    <label for="u11">u11 (7pm)</label>
+
+    <p>Select practice days:</p>
+    
+    <input type="checkbox" id="sunday" name="sunday" value="sunday">
+    <label for="sunday">Sunday</label><br>
+    <input type="checkbox" id="monday" name="monday" value="monday">
+    <label for="monday">Monday</label><br>
+    <input type="checkbox" id="tuesday" name="tuesday" value="tuesday">
+    <label for="tuesday">Tuesday</label><br>
+    <input type="checkbox" id="wednesday" name="wednesday" value="wednesday">
+    <label for="wednesday">Wednesday</label><br>
+    <input type="checkbox" id="thursday" name="thursday" value="thursday">
+    <label for="thursday">Thursday</label><br>
+
+
+
+            <!-- Soccer Experience -->
+            <div class="form-group">
+                <label for="soccer_experience">Soccer Experience (if any):</label>
+                <textarea id="soccer_experience" name="soccer_experience" rows="4"></textarea>
+            </div>
+
+            <!-- Medical Information -->
+            <div class="form-group">
+                <label for="medical_conditions">Medical Conditions (if any):</label>
+                <textarea id="medical_conditions" name="medical_conditions" rows="4"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Submit Registration</button>
+        </form>
+    </div>
+</section>
+
+
+
+    
+    <!-- Academy Details Section -->
+<section class="academy-details">
+    <div class="container">
+        <h2 class="padded">Academy Details</h2>
+
+        <div class="details-grid">
+            <div class="detail">
+                <i class="fas fa-map"></i>
+                <h3>Location</h3>
+                <p>Rose City Soccer Complex</p>
+                <p>10340 CR 490, Tyler TX, 75706</p>
+            </div>
+
+            <div class="detail">
+                <i class="fas fa-calendar"></i>
+                <h3>Date & Time</h3>
+                <p>Sunday - Thursday</p>
+                <p>4pm - U5</p>
+                <p>5pm - U7</p>
+                <p>6pm - U9</p>
+                <p>7pm - U11</p>
+            </div>
+
+            <div class="detail">
+                <i class="fas fa-futbol"></i>
+                <h3>What to bring</h3>
+                <p>Hydration, athletic clothes, & soccer cleats.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors">
+        <div class="sponsors-slide">
+            <!-- Sponsors' Logos Go Here -->
+                <a href=""><img src="logos/knights_logo.png" alt="Sponsor 4"></a>
+                <a href="https://erling91.github.io/"><img src="logos/droDev_logo.png" alt="Sponsor 1"></a>
+                <a href=""><img src="logos/SRC_logo.png" alt="Sponsor 2"></a>
+                <a href=""><img src="logos/J&SC_logo.PNG" alt="Sponsor 3"></a>    
+        </div>
+        <div class="sponsors-slide">
+            <!-- Sponsors' Logos Go Here -->
+                <a href=""><img src="logos/knights_logo.png" alt="Sponsor 4"></a>
+                <a href="https://erling91.github.io/"><img src="logos/droDev_logo.png" alt="Sponsor 1"></a>
+                <a href=""><img src="logos/SRC_logo.png" alt="Sponsor 2"></a>
+                <a href=""><img src="logos/J&SC_logo.PNG" alt="Sponsor 3"></a>    
+        </div>
+        <div class="sponsors-slide">
+            <!-- Sponsors' Logos Go Here -->
+                <a href=""><img src="logos/knights_logo.png" alt="Sponsor 4"></a>
+                <a href="https://erling91.github.io/"><img src="logos/droDev_logo.png" alt="Sponsor 1"></a>
+                <a href=""><img src="logos/SRC_logo.png" alt="Sponsor 2"></a>
+                <a href=""><img src="logos/J&SC_logo.PNG" alt="Sponsor 3"></a>    
+        </div>
+        <div class="sponsors-slide">
+            <!-- Sponsors' Logos Go Here -->
+                <a href=""><img src="logos/knights_logo.png" alt="Sponsor 4"></a>
+                <a href="https://erling91.github.io/"><img src="logos/droDev_logo.png" alt="Sponsor 1"></a>
+                <a href=""><img src="logos/SRC_logo.png" alt="Sponsor 2"></a>
+                <a href=""><img src="logos/J&SC_logo.PNG" alt="Sponsor 3"></a>    
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <div class="contact-details">
+                <h3>Contact Us</h3>
+                <p>Email: SmithCountySoccerAcademy@gmail.com</p>
+                <p>Phone: 903.805.3048</p>
+                <p>Office: 103 Mallory st, Lindale TX, 75771</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100088450023325" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/smithcountysocceracademy/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="column">
+                <div class="footer__links">
+                    <h3 class="footer__heading">Academy</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Athlete Scholarships</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h3 class="footer__heading">Information</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

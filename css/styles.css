@@ -220,7 +220,7 @@ nav a {
 .showcase {
     position: relative;
     height: 100vh;
-    background-image: url('/images/background1.jpg');
+    background-image: url('/images/background.jpg');
     background-size: cover;
     background-position: center;
     color: #000000;
